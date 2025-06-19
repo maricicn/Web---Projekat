@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin1.master.cs" Inherits="Web___Projekat.Admin1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width:100%">
+            <div style="width:30%; float:left; background-color:#bd8b4a; text-align:center;">
+
+                <asp:Label ID="Label1" runat="server" Text="Email:"></asp:Label>
+                <br />
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label3" runat="server" Text="Lozinka:"></asp:Label>
+                <br />
+                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                <br />
+                <br />
+
+                <img src="PBG.jpeg" style="width:150px"/>
+                <br />
+                <br />
+                <asp:HyperLink ID="PocetnaLink" runat="server" href="pocetna.aspx">POCETNA</asp:HyperLink>
+                <br />
+                OPSTI PODACI : <br />
+                &nbsp;&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" href="ServisAM.aspx">PODACI ZA AUTOMEHANICARA</asp:HyperLink>
+
+            </div>
+
+            <div style="width:70%; float:left;">
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+        
+    </form>
+</body>
+</html>
